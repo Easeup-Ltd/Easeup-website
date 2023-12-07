@@ -1,58 +1,57 @@
-
 import Image from "next/image";
 
-
-
-
 function ProductDescription() {
-    return (
-        <section
-   
-        className="w-full mt-[100vh] flex items-center text-background justify-center   z-0 h-[70vh] relative    bg-background"
-      >
-        <div className="bg-gradient-to-r to-[#000000] via-[#BBCCCB] from-[#D9EDEB] h-full w-full"></div>
-        <div className="flex absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] container mx-auto gap-x-12 items-center justify-center h-[80%]">
-          <div className="basis-1/2 h-full flex justify-between">
-
-              <Image
-                width="200"
-                height="400"
-                src="/earning.png"
-                className="object-contain"
-                alt="sharing transaction payments"
-              />
-               <Image
-                width="300"
-                height="400"
-                src="/aiscreen.png"
-                className="object-contain"
-                alt="sharing transaction payments"
-              />
-               <Image
-                width="200"
-                height="400"
-                src="/schedulescreen.png"
-                className="object-contain"
-                alt="sharing transaction payments"
-              />
-           
-          </div>
-          <div className="font-medium basis-1/2 flex flex-col justify-center gap-y-6">
-            <h2 className="lg:text-3xl">Our apps</h2>
-            <p className="leading-6">
-              <span className="block"> Mobile App Platform:</span>
-              At the heart of EaseUps operations is our innovative mobile app,
-              providing a seamless platform for handymen and clients to connect
-              effortlessly.
-            </p>
-            <p className="leading-6">
-              The app serves as a virtual marketplace, facilitating the exchange
-              of services with efficiency and convenience.
-            </p>
-          </div>
+  return (
+    <section className="w-full  lg:bg-gradient-to-l bg-gradient-to-bl from-[#000000]  via-[#bbcccb] to-[#d9edeb] flex items-center text-background justify-center   z-0 min-h-[70vh] h-full relative    bg-background">
+      <div className="lg:flex lg:flex-row-reverse px-3 sm:px-6 lg:px-12 py-12 lg:py-0 container mx-auto gap-x-12 items-center justify-center min-h-[70vh]">
+        <div className=" text-center basis-1/2 flex flex-col  justify-center  gap-y-6">
+          <h2 className="lg:text-3xl font-medium text-2xl">Our apps</h2>
+          <p className="leading-6">
+            Beaver offers a diverse array of services, empowering clients to
+            choose from a range of skilled professionals for their specific
+            needs. The app incorporates artificial intelligence (AI) to address
+            customer queries and provide instant assistance, ensuring a
+            user-friendly experience. Clients can track the progress of their
+            bookings in real-time, from the initial request to the completion of
+            the task
+          </p>
+          <p className="leading-6">
+            <span className="block">Beaver pro:</span>
+            Tailored for handymen, Beaver Pro is a specialized feature enabling
+            tradespeople to accept jobs from clients seamlessly. Handymen can
+            efficiently plan their schedules within the app, allowing clients to
+            be informed about their availability. The platform enables handymen
+            to track the progress of bookings, ensuring a tranvsparent and
+            accountable service delivery process
+          </p>
         </div>
-      </section>
-    )
+        <div className="lg:basis-1/2 mt-6 h-[400px]  w-full  relative">
+        <Image
+             src="/earning.png"
+              width={500}
+              height={700}
+              className=" absolute left-[50%] -translate-x-[calc(50%+25px)] lg:-translate-x-[calc(50%+110px)]  object-contain w-full h-full"
+             alt="sharing transaction payments"
+             />
+              <Image
+             src="/aiscreen.png"
+              width={500}
+              height={700}
+              className=" absolute left-[50%] -translate-x-[calc(50%-25px)] lg:-translate-x-[50%] lg:top-0 z-10 top-9  object-contain w-full  h-full"
+             alt="sharing transaction payments"
+             />
+               <Image
+             src="/schedulescreen.png"
+              width={500}
+              height={700}
+              className=" absolute left-[50%] -translate-x-[calc(50%-110px)] hidden lg:block top-0  object-contain w-full  h-full"
+             alt="sharing transaction payments"
+             />
+
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default ProductDescription
+export default ProductDescription;

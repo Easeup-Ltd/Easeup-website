@@ -9,9 +9,9 @@ function DropDown({question, answer}:{question:string, answer:string}) {
     }
   return (
     <React.Fragment>
-      <div onClick={toggleVisibility} className={`flex justify-between px-6 mb-2  cursor-pointer ${isVisible?'shadow-md ': null}  py-2 border-[0.5px] border-foreground items`}>
+      <div onClick={toggleVisibility} className={`flex justify-between px-6 mb-2  items-center  cursor-pointer ${isVisible?'shadow-md ': null}  py-2 border-[0.5px] border-foreground `}>
         <p>{question}</p>
-        <div className={`relative transsition-all duration-200 ease-in-out w-[15px] h-[15px] ${isVisible ? "rotate-180" : "rotate-0"}`}>
+        <div className={`relative transsition-all duration-200 ease-in-out shrink-0 w-[15px] h-[15px] ${isVisible ? "rotate-180" : "rotate-0"}`}>
           <Image
             src={"/bxs_up-arrow.png"}
             alt={"arrow indication dropdown state"}

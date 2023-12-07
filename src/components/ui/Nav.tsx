@@ -1,10 +1,17 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { links } from '@/contents/nav'
-function Nav() {
+import { AlignJustify, X } from 'lucide-react'
+import useScroll from '@/hooks/useScroll'
+function Nav({displaySideBar, setSideBar}:{displaySideBar:boolean, setSideBar: Function}) {
+  const isScroll = useScroll()
+  const toggleSideBar= ()=>{
+setSideBar(!displaySideBar)
+  }
     return (
-        <header className=" fixed z-50  top-0 left-0 h-[100px] bg-background  px-2  w-full ">
+        <header className={`${isScroll ? "shadow-md ": null} fixed  z-50  top-0 left-0 h-[80px] lg:h-[100px] bg-background  px-2  w-full `}>
         <div className="container mx-auto flex justify-between items-center h-full">
 
       
@@ -16,7 +23,7 @@ function Nav() {
           alt="Easp up logo"
         />
         </div>
-        <nav>
+        <nav className='hidden lg:block'>
           <ul className="flex md:gap-x-2  lg:gap-x-5 justify-center w-full items-center">
             {links.map((link, id) => (
               <li key={id}>
@@ -27,7 +34,7 @@ function Nav() {
             ))}
           </ul>
         </nav>
-        <div className="flex gap-x-2">
+        <div className="hidden lg:flex gap-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -40,8 +47,11 @@ function Nav() {
               fill="#121212"
             />
           </svg>
+   
           <Link href={"mailto:info@easeupgh.tech"}>info@easeupgh.tech</Link>
         </div>
+      { !displaySideBar && <AlignJustify onClick={toggleSideBar} className='w-[34px] h-[34px] lg:hidden' />}
+        {displaySideBar && <X onClick={toggleSideBar}  className='w-[34px] h-[34px] lg:hidden'  />}
         </div>
       </header>
     )

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import {Montserrat} from "next/font/google"
 import './globals.css'
+import LayourWrapper from '@/components/ui/LayourWrapper'
 
 export const metadata: Metadata = {
   title: 'Ease Up',
@@ -12,9 +13,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
+
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+      <main className='overflow-x-hidden'>
+        <LayourWrapper/>
+        {children}
+      </main>
+    
+      </body>
     </html>
   )
 }

@@ -6,10 +6,11 @@ import HeroSection from "@/components/home/HeroSection"
 import OurAppsSection from "@/components/home/OurAppsSection"
 
 
+
 function page() {
     return (
-       <main className="w-full h-fit   bg-background">
-        <HeroSection/>
+       <main className="w-full h-fit   bg-background ">
+        <HeroSection/>  
         <AboutSection/>
         <OurAppsSection/>
         <FaqSection/>

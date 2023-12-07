@@ -4,8 +4,8 @@ import Input from "../ui/Input";
 
 function Contact() {
   return (
-    <section id={"contact"} className="w-full h-screen z-0 flex items-center justify-center flex-col ">
-      <h2 className="lg:text-3xl text-center mb-12">Contact Us</h2>
+    <section id={"contact"} className="w-full h-screen  px-3 sm:px-6 lg:px-12 z-0 flex items-center justify-center flex-col ">
+       <h2 className="lg:text-3xl text-2xl  font-medium text-center mb-12">Contact Us</h2>
       <form className="max-w-[900px] w-[90%] mx-auto">
         <div className="flex gap-x-4 justify-between">
           <Input name="name" id="name" placeholder="Name" type="string"/>
