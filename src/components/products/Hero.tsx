@@ -34,21 +34,21 @@ function Hero() {
           </div>
           <div className="lg:basis-1/2   w-full h-[400px] relative  ">
             <Image
-              src={"/rectangle-2.png"}
+              src={"/popular-services.png"}
               alt={"ease-up service description image "}
               className="object-contain  left-[50%] -translate-x-[calc(50%+80px)] absolute  w-full h-full"
               width={300}
               height={600}
             />
             <Image
-              src={"/rectangle.png"}
+              src={"/man-helmet.png"}
               alt={"ease-up service description image "}
               className="object-contain z-20 left-[50%] -translate-x-[50%] absolute  w-full h-full"
               width={300}
               height={600}
             />
             <Image
-              src={"/rectangle-3.png"}
+              src={"/earnings.png"}
               alt={"ease-up service description image "}
               className="object-contain absolute left-[50%] -translate-x-[calc(50%-80px)]   w-full h-full"
               width={300}

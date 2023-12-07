@@ -42,7 +42,7 @@ function OurAppsSection() {
              alt={"craftsmen smilling 1"}
              />
                 <Image
-             src="/rectangle-2.png"
+             src="/man-helmet.png"
               width={300}
               height={400}
               className=" absolute lg:hidden block left-[50%] -translate-x-[calc(50%+50px)]  object-contain w-full z-10 h-full"
@@ -50,7 +50,7 @@ function OurAppsSection() {
              />
              
                <Image
-             src="/rectangle.png"
+             src="/popular-services.png"
               width={300}
               height={400}
               className="absolute left-[50%] lg:hidden block -translate-x-[calc(50%-50px)] top-0 h-full object-contain  w-full"
