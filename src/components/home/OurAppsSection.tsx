@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Heading2 from "../ui/Heading2";
 function OurAppsSection() {
   return (
     <section
@@ -9,7 +10,7 @@ function OurAppsSection() {
 
 <div className="lg:flex py-12 lg:py-0 container mx-auto gap-x-12 items-center justify-center min-h-[70vh] ">
         <div className="text-center lg:text-left  basis-1/2 flex flex-col justify-center gap-y-6">
-        <h2 className="lg:text-3xl text-2xl  font-medium ">Our apps</h2>
+        <Heading2>Our Apps</Heading2>
           <p className="leading-6">
             <span className="block"> Mobile App Platform:</span>
             At the heart of EaseUps operations is our innovative mobile app,
@@ -21,7 +22,7 @@ function OurAppsSection() {
             of services with efficiency and convenience.
           </p>
           <div>
-          <Link href="/products" className="py-[10px] z-50 cursor-pointer lg:py-[15px] lg:px-12 lg:mt-[10px] inline-block px-10 font-medium bg-foreground rounded-full text-[#EBEBEB]">See More</Link>
+          <Link href="/products" className="py-[10px] hover:scale-[1.1] duration-150 ease-linear z-50 cursor-pointer lg:py-[15px] lg:px-12 lg:mt-[10px] inline-block px-10 font-medium bg-foreground rounded-full text-[#EBEBEB]">See More</Link>
           </div>
 
         </div>

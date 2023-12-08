@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
+import Link from "next/link";
 function Footer() {
+  
   //Please do not mind this section id be optimising
   return (
-    <footer className="relative  z-0 min-h-[35vh]   w-full text-background bg-foreground pt-10">
+    <footer className="relative  z-10 min-h-[35vh]   w-full text-background bg-foreground pt-10">
       <div className="container mx-auto mb-[50px] lg:mb-0 h-full px-6 lg:px-12 md:flex-row flex-col gap-y-5 flex justify-between items-start">
         <div >
           <div className="relative w-[120px] mb-3 h-[34px] ">
@@ -35,7 +37,7 @@ function Footer() {
         <div>
           <h2 className="font-medium mb-3 lg:text-lg">Company</h2>
           <ul className="text-[13px] flex flex-col gap-y-3 w-full">
-            <li>About Us</li>
+            <li> <Link href="#about">About Us</Link></li>
             <li>Terms and conditions</li>
             <li>Privacy Policy</li>
           </ul>
@@ -49,11 +51,11 @@ function Footer() {
             </li>
             <li className="flex items-center gap-x-2">
               <Phone />
-              26 453 5539
+             <Link href={"tel:264535539"}>26 453 5539</Link> 
             </li>
             <li className="flex items-center gap-x-2">
               <Mail />
-              support@easeupgh.tech
+             <Link href={"mailto:support@easeupgh.tech"}>support@easeupgh.tech</Link> 
             </li>
           </ul>
         </div>

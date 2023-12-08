@@ -6,13 +6,13 @@ import Link from "next/link";
 function HeroSection() {
   return (
     <React.Fragment>
-    <section id="home" className="fixed  -z-10 lg:top-[100px] top-[80px] left-0 w-full  lg:h-[calc(100vh-100px)] h-[calc(90vh-80px)]  ">
+    <section id="home" className="fixed  z-[1] lg:top-[100px] top-[80px] left-0 w-full  lg:h-[calc(100vh-100px)] h-[calc(90vh-80px)]  ">
      
-      <div className="h-full  w-full">
+      <div className="h-full  w-full ">
 
    
       <div className="h-full  relative ">
-        <div className="w-full h-full flex ">
+      <div className="w-full h-full flex  ">
           <div className=" w-full lg:basis-1/2 relative">
             <Image
               className="basis-1 lg:basis-1/2 object-cover"
@@ -30,8 +30,10 @@ function HeroSection() {
             />
           </div>
         </div>
-        <div className="bg-foreground/[0.25]  text-background flex items-center justify-center  absolute left-0 top-0 w-full h-full">
-          <div className="container z-10 mx-auto gap-y-6 px-4 lg:px-[200px] flex-col flex items-center justify-center ">
+
+        <div className="bg-foreground/[0.25] z-50  text-background flex items-center justify-center absolute left-0 top-0    w-full h-full">
+          
+          <div className="container mx-auto gap-y-6 px-4 lg:px-[200px] flex-col flex items-center justify-center ">
             <h1 className="text-center  text-xl sm:text-3xl lg:text-4xl lg:leading-[54px] font-semibold">
               Connecting You with Skilled Handymen for All Your Home Improvement
               Needs
@@ -49,7 +51,7 @@ function HeroSection() {
             </p>
             <div>
               
-           <Link href="#contact" className="py-[10px] z-50 cursor-pointer lg:py-[15px] lg:px-10 lg:mt-[10px] inline-block px-8 font-medium bg-foreground rounded-full text-[#EBEBEB]">Contact Us</Link>
+           <Link href="mailto:support@easeupgh.tech" className="hover:scale-[1.1] ease-linear duration-150 py-3 px-10 lg:px-12 inline-block cursor-pointer  lg:mt-[10px] font-medium bg-foreground rounded-full text-[#EBEBEB]">Contact Us</Link>
             </div>
           </div>
         </div>

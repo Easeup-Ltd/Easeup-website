@@ -1,9 +1,11 @@
 import React from "react";
 import { Download } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
 function DownloadApp() {
   return (
-    <section className=' w-full bg-contain bg-no-repeat relative  min-h-[60vh]'>
+    <section className=' w-full z-10  bg-inherit bg-contain bg-no-repeat relative  min-h-[60vh]'>
       <div className="relative hidden sm:block w-full min-h-[60vh] h-full">
      <Image
      src="/download.png"
@@ -30,7 +32,7 @@ function DownloadApp() {
           <br/>
           <p>Download the EaseUp app today and experience the difference!</p>
           <br/>
-          <button className="flex w-full sm:w-fit  items-center text-[13px] sm:text-base bg-background mx-auto sm:ml-0 justify-center px-6 py-[12px] rounded-full gap-x-1 sm:gap-x-2 sm:bg-foreground text-foreground sm:text-background"><Download strokeWidth={2.75} />Download the app</button>
+          <Link href="" className="flex hover:scale-[1.1] ease-linear duration-150 w-full sm:w-fit  items-center text-[13px] sm:text-base bg-background mx-auto sm:ml-0 justify-center px-10 lg:px-12 py-3 rounded-full gap-x-1 sm:gap-x-2 sm:bg-foreground text-foreground sm:text-background tracking-wider"><Download strokeWidth={2.75} />Download app</Link>
         </div>
       </div>
     </section>

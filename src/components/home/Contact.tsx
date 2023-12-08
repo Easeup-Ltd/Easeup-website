@@ -5,6 +5,7 @@ import Input from "../ui/Input";
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { useToast } from "../ui/use-toast";
+import Heading2 from "../ui/Heading2";
 function Contact() {
   const {toast} = useToast()
   const formRef  =  useRef<HTMLFormElement>(null)
@@ -26,8 +27,8 @@ function Contact() {
   }
 
   return (
-    <section  id={"contact"} className="w-full h-screen  px-3 sm:px-6 lg:px-12 z-0 flex items-center justify-center flex-col ">
-       <h2 className="lg:text-3xl text-2xl  font-medium text-center mb-12">Contact Us</h2>
+    <section  id={"contact"} className="w-full h-screen  px-3 sm:px-6 lg:px-12 z-10 relative bg-inherit flex items-center justify-center flex-col ">
+       <Heading2 className="text-center mb-12">Contact Us</Heading2>
       <form  onSubmit={(e)=>{handleSubmit(e)}} ref={formRef} className="max-w-[900px] w-[90%] mx-auto">
         <div className="flex lg:flex-row flex-col gap-x-4 lg:gap-y-0 gap-y-4 justify-between">
           <Input name="sender_name" id="name" placeholder="Name" type="string"/>
