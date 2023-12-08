@@ -21,17 +21,17 @@ function AboutSection() {
          <Heading2>
           About Us
          </Heading2>
-          <motion.p initial={{y:50}} whileInView={{y:0}}>
+          <motion.p viewport={{once:true}} initial={{y:50}} transition={{type:"tween"}} whileInView={{y:0}}>
             EaseUp is committed to bridging the gap between clients seeking
             reliable home services and skilled handymen looking for
             opportunities.
           </motion.p>
-          <motion.p initial={{y:50}} whileInView={{y:0}}>
+          <motion.p viewport={{once:true}}initial={{y:50}} transition={{type:"tween"}} whileInView={{y:0}}>
             Our mobile app, with its user-friendly interface and advanced
             features, exemplifies our dedication to making the entire process
             hassle-free and transparent.
           </motion.p>
-          <motion.p initial={{y:50}} whileInView={{y:0}}>
+          <motion.p viewport={{once:true}} initial={{y:50}} transition={{type:"tween"}} whileInView={{y:0}}>
             Whether youre a client in need of home improvement services or a
             skilled tradesperson seeking opportunities, EaseUp and the Beaver
             mobile app are here to simplify your experience.

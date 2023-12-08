@@ -32,7 +32,7 @@ function DownloadApp() {
           <br/>
           <p>Download the EaseUp app today and experience the difference!</p>
           <br/>
-          <Link href="" className="flex hover:scale-[1.1] ease-linear duration-150 w-full sm:w-fit  items-center text-[13px] sm:text-base bg-background mx-auto sm:ml-0 justify-center px-10 lg:px-12 py-3 rounded-full gap-x-1 sm:gap-x-2 sm:bg-foreground text-foreground sm:text-background tracking-wider"><Download strokeWidth={2.75} />Download app</Link>
+          <Link href="https://play.google.com/store/apps/details?id=com.io.easeup" className="flex hover:scale-[1.1] ease-linear duration-150 w-full sm:w-fit  items-center text-[13px] sm:text-base bg-background mx-auto sm:ml-0 justify-center px-10 lg:px-12 py-3 rounded-full gap-x-1 sm:gap-x-2 sm:bg-foreground text-foreground sm:text-background tracking-wider"><Download strokeWidth={2.75} />Download app</Link>
         </div>
       </div>
     </section>
