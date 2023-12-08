@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import {Montserrat} from "next/font/google"
 import './globals.css'
+import { Toaster } from '@/components/ui/toaster'
 import LayourWrapper from '@/components/ui/LayourWrapper'
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
         <LayourWrapper/>
         {children}
       </main>
-    
+      <Toaster />
       </body>
     </html>
   )

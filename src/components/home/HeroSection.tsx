@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../ui/Button";
 import React from "react";
+import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -29,8 +30,8 @@ function HeroSection() {
             />
           </div>
         </div>
-        <div className="bg-foreground/[0.25]  text-background flex items-center justify-center    absolute left-0 top-0 w-full h-full">
-          <div className="container mx-auto gap-y-6 px-4 lg:px-[200px] flex-col flex items-center justify-center ">
+        <div className="bg-foreground/[0.25]  text-background flex items-center justify-center  absolute left-0 top-0 w-full h-full">
+          <div className="container z-10 mx-auto gap-y-6 px-4 lg:px-[200px] flex-col flex items-center justify-center ">
             <h1 className="text-center  text-xl sm:text-3xl lg:text-4xl lg:leading-[54px] font-semibold">
               Connecting You with Skilled Handymen for All Your Home Improvement
               Needs
@@ -47,7 +48,8 @@ function HeroSection() {
               tradespeople.
             </p>
             <div>
-            <Button name={"Contact Us"}/>
+              
+           <Link href="#contact" className="py-[10px] z-50 cursor-pointer lg:py-[15px] lg:px-10 lg:mt-[10px] inline-block px-8 font-medium bg-foreground rounded-full text-[#EBEBEB]">Contact Us</Link>
             </div>
           </div>
         </div>

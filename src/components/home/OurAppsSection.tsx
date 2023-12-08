@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 function OurAppsSection() {
   return (
     <section
@@ -20,6 +20,10 @@ function OurAppsSection() {
             The app serves as a virtual marketplace, facilitating the exchange
             of services with efficiency and convenience.
           </p>
+          <div>
+          <Link href="/products" className="py-[10px] z-50 cursor-pointer lg:py-[15px] lg:px-12 lg:mt-[10px] inline-block px-10 font-medium bg-foreground rounded-full text-[#EBEBEB]">See More</Link>
+          </div>
+
         </div>
         <div className="basis-1/2 flex items-center justify-center relative h-[400px]  ">
    

@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 function Footer() {
   //Please do not mind this section id be optimising
   return (
-    <footer className="relative  min-h-[35vh]   w-full text-background bg-foreground pt-10">
+    <footer className="relative  z-0 min-h-[35vh]   w-full text-background bg-foreground pt-10">
       <div className="container mx-auto mb-[50px] lg:mb-0 h-full px-6 lg:px-12 md:flex-row flex-col gap-y-5 flex justify-between items-start">
         <div >
           <div className="relative w-[120px] mb-3 h-[34px] ">

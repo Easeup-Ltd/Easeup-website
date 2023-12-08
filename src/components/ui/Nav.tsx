@@ -27,7 +27,7 @@ setSideBar(!displaySideBar)
           <ul className="flex md:gap-x-2  lg:gap-x-5 justify-center w-full items-center">
             {links.map((link, id) => (
               <li key={id}>
-                <Link className="text-lg  leading-7" href={link.to}>
+                <Link className="text-lg hover:font-semibold transition-all ease-in-out leading-7" href={link.to}>
                   {link.name}
                 </Link>
               </li>
