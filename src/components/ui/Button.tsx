@@ -4,7 +4,7 @@ type ButtonProps = {
 }
 
 function Button({name}:ButtonProps) {
-  return <button className="py-2 px-8 bg-foreground rounded-full text-[#EBEBEB]">{name}</button>;
+  return <button className="py-3 px-10 lg:px-12 font-medium bg-foreground rounded-full text-[#EBEBEB]">{name}</button>;
 }
 
 export default Button;
