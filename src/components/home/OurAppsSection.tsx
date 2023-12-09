@@ -1,7 +1,12 @@
+"use client"
+import { cubicBezier } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Heading2 from "../ui/Heading2";
+import Paragraph from "../ui/Paragraph";
+import { easeOut, motion } from "framer-motion";
 function OurAppsSection() {
+  const eased = cubicBezier(0.65, 0, 0.35, 1)
   return (
     <section
       id="our-app"
@@ -11,22 +16,22 @@ function OurAppsSection() {
 <div className="lg:flex py-12 lg:py-0 container mx-auto gap-x-12 items-center justify-center min-h-[70vh] ">
         <div className="text-center lg:text-left  basis-1/2 flex flex-col justify-center gap-y-6">
         <Heading2>Our Apps</Heading2>
-          <p className="leading-6">
+          <Paragraph delay={0.1} className="leading-6">
             <span className="block"> Mobile App Platform:</span>
             At the heart of EaseUps operations is our innovative mobile app,
             providing a seamless platform for handymen and clients to connect
             effortlessly.
-          </p>
-          <p className="leading-6">
+          </Paragraph>
+          <Paragraph delay={0.2} className="leading-6">
             The app serves as a virtual marketplace, facilitating the exchange
             of services with efficiency and convenience.
-          </p>
+          </Paragraph>
           <div>
-          <Link href="/products" className="py-[10px] hover:scale-[1.1] duration-150 ease-linear z-50 cursor-pointer lg:py-[15px] lg:px-12 lg:mt-[10px] inline-block px-10 font-medium bg-foreground rounded-full text-[#EBEBEB]">See More</Link>
+          <motion.span transition={{delay:0.4, type:"tween", ease:eased, duration:0.75}} initial={{opacity:0}} whileInView={{opacity:1}}><a href="/products" className="py-[10px]  hover:scale-[1.1] duration-150 ease-linear z-50 cursor-pointer lg:py-[15px] lg:px-12 lg:mt-[10px] inline-block px-10 font-medium bg-foreground rounded-full text-[#EBEBEB]">See More</a></motion.span>  
           </div>
 
         </div>
-        <div className="basis-1/2 flex items-center justify-center relative h-[400px]  ">
+        <motion.div initial={{ scale:0.8}} viewport={{once:true}} whileInView={{ scale:1}} transition={{type:"tween",delay:0.3, duration:0.75, ease: eased}} className="basis-1/2 flex items-center justify-center relative h-[400px]  ">
    
 
 
@@ -63,7 +68,7 @@ function OurAppsSection() {
              />
           
         
-        </div>
+        </motion.div>
       </div>
     </section>
   );

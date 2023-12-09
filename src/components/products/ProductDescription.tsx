@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Heading2 from "../ui/Heading2";
+import Paragraph from "../ui/Paragraph";
 function ProductDescription() {
   return (
-    <section className="w-full  mt-[90vh] lg:mt-[100vh] z-20  lg:bg-gradient-to-l bg-gradient-to-bl from-[#000000]  via-[#bbcccb] to-[#d9edeb] flex items-center text-background justify-center    min-h-[70vh] h-full relative    bg-background">
+    <section className="w-full  z-20  lg:bg-gradient-to-l bg-gradient-to-bl from-[#000000]  via-[#bbcccb] to-[#d9edeb] flex items-center text-background justify-center    min-h-[70vh] h-full relative    bg-background">
       <div className="lg:flex lg:flex-row-reverse px-3 sm:px-6 lg:px-12 py-12 lg:py-0 container mx-auto gap-x-12 items-center justify-center min-h-[70vh]">
         <div className=" text-center basis-1/2 flex flex-col  justify-center  gap-y-6">
          <Heading2>Our Apps</Heading2>
-          <p className="leading-6">
+          <Paragraph className="leading-6">
             Beaver offers a diverse array of services, empowering clients to
             choose from a range of skilled professionals for their specific
             needs. The app incorporates artificial intelligence (AI) to address
@@ -14,8 +15,8 @@ function ProductDescription() {
             user-friendly experience. Clients can track the progress of their
             bookings in real-time, from the initial request to the completion of
             the task
-          </p>
-          <p className="leading-6">
+          </Paragraph>
+          <Paragraph delay={0.2} className="leading-6">
             <span className="block">Beaver pro:</span>
             Tailored for handymen, Beaver Pro is a specialized feature enabling
             tradespeople to accept jobs from clients seamlessly. Handymen can
@@ -23,7 +24,7 @@ function ProductDescription() {
             be informed about their availability. The platform enables handymen
             to track the progress of bookings, ensuring a tranvsparent and
             accountable service delivery process
-          </p>
+          </Paragraph>
         </div>
         <div className="lg:basis-1/2 mt-6 h-[400px]  w-full  relative">
         <Image

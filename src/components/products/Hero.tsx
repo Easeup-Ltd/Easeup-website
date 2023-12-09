@@ -5,7 +5,7 @@ import Heading2 from "../ui/Heading2";
 function Hero() {
   return (
     <React.Fragment>
-      <section className="  fixed  z-[1] lg:top-[100px] top-[80px]  w-full  lg:min-h-[calc(100vh-100px)]  min-h-[calc(90vh-80px)]  ">
+      <section className="   z-[1] lg:mt-[100px] mt-[80px]  w-full  lg:min-h-[calc(100vh-100px)]  min-h-[calc(90vh-80px)]  ">
         <div className="bg-gradient-to-r  absolute -left-[90%] -top-[30%] sm:-left-[60%] lg:-left-[10%] lg:-top-[20%]  to-[#311996]/[.1] from-[#40A4FF]/[.1] w-[650px] h-[650px] rounded-full"></div>
            <h2 className="lg:text-3xl text-2xl font-medium  pt-4 my-7 text-center">
            Beaver and Beaver Pro

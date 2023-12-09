@@ -74,3 +74,6 @@
     @apply bg-background text-foreground;
   }
 }
+.rotate-left {
+  transform-origin: bottom left;
+}
