@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/Button";
 import Input from "../ui/Input";
 import { easeOut, motion } from "framer-motion";
 import { useRef, useState } from "react";
