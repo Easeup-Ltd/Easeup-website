@@ -40,7 +40,7 @@ function AboutSection() {
         </div>
         <motion.div
           style={{ scale }}
-          className="lg:basis-1/2  h-[450px] lg:h-[450px] mt-8  "
+          className="lg:basis-1/2 h-[450px] lg:h-[450px] lg:mt-0 mt-10  "
         >
           <div className="relative bg-[url('/about.png')] bg-no-repeat bg-cover  cursor-pointer transition-all ease-in-out  w-full h-full rounded-[50px] lg:rounded-[100px] overflow-hidden "></div>
         </motion.div>

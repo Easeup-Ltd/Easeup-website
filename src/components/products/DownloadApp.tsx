@@ -59,13 +59,13 @@ function DownloadApp() {
               <DropdownMenuLabel>Choose a Product</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem className="cursor-pointer">
-                <Link href="https://play.google.com/store/apps/details?id=com.io.easeup">
+                <Link className="w-full block  py-1" target="blank" href="https://play.google.com/store/apps/details?id=com.io.easeup">
                   Beaver
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">
-                <Link href="https://play.google.com/store/apps/details?id=com.easeup.worker">
-                  Beaver
+                <Link className="w-full block py-1" target="blank" href="https://play.google.com/store/apps/details?id=com.easeup.worker">
+                  Beaver Pro
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
